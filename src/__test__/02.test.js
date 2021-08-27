@@ -19,6 +19,8 @@ test("counter increments date by one", () => {
     name: /\+1/i,
   });
 
+  // screen.debug() // to see what's in jest dom now
+
   expect(date).toHaveTextContent(prev);
   userEvent.click(btn);
   expect(date).toHaveTextContent(next);

@@ -5,9 +5,9 @@ import * as Utils from "../utils";
 
 /**
  * Takeaways:
- * 1) beforeEach
- * 2) creating our own "render" from jest
- * 3) mocking MouseEvents
+ * 1) creating our own "render" from jest
+ * 2) mocking MouseEvents
+ * 3) beforeEach: clean up after yourself
  */
 beforeEach(() => {
   document.body.innerHTML = "";
@@ -36,3 +36,9 @@ test("counter increments date by one", () => {
   btn.dispatchEvent(event);
   expect(p.textContent).toBe(next);
 });
+
+test("check this out", () => {
+  // if you don't have beforeEach,
+  // you will see the previous result!
+  console.log(document.body.innerHTML);
+})

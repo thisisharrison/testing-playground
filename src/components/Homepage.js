@@ -20,10 +20,10 @@ export default function Homepage() {
         <li>
           <a href="/context">Context</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/msw">Server</a>
         </li>
-        {/* <li>
+        <li>
           <a href="/redux">Redux</a>
         </li>
         <li>
