@@ -14,4 +14,4 @@ function dateToString(date) {
   return `${year}-${month}-${day}`;
 }
 
-export { incrementDate, dateToString };
+export {incrementDate, dateToString};

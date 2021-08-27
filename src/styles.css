@@ -2,3 +2,13 @@
   font-family: sans-serif;
   text-align: center;
 }
+/* Sharing starting point */
+.homepage {
+  display: grid;
+  place-items: center;
+  line-height: 1.5rem;
+  padding: 20px;
+}
+.dark {
+  background-color: grey;
+}
